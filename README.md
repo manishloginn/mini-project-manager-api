@@ -49,6 +49,7 @@ Resource routes are under `/api/v1`. Send `Authorization: Bearer <accessToken>` 
 | POST | `/api/v1/auth/login` | Return a token |
 | GET | `/api/v1/auth/me` | Current user |
 | GET | `/api/v1/health` | Process and database status |
+| GET | `/api/v1/cron` | Returns `OK`. The same check also runs every 2 minutes inside the API process |
 | GET, POST | `/api/v1/projects` | List or create projects |
 | GET, PATCH, DELETE | `/api/v1/projects/:id` | One project |
 | GET, POST | `/api/v1/projects/:projectId/tasks` | List or create tasks |
